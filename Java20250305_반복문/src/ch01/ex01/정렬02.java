@@ -13,7 +13,7 @@ public class 정렬02 {
 		//seed값이 없으면 랜덤하게 추출
 		Random random = new Random();
 		
-		int[] numArr = new int[8];
+		int[] numArr = new int[5];
 		int tmp;
 		
 		//랜덤하게 1~100사이 값을 배열에 넣는다..

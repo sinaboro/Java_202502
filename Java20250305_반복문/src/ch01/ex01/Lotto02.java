@@ -16,7 +16,7 @@ public class Lotto02 {
 		for(int i=0; i<lotto.length; i++) {
 			lotto[i] = i+1;
 		}
-		
+	
 		//배열 썩기~
 		for(int i=0; i<1000; i++) {
 			int index = (int)(Math.random()*45); //0~44			
@@ -28,7 +28,7 @@ public class Lotto02 {
 		
 		//배열45개 칸 중 앞자리 6자리만 출력
 		System.out.println("이번 주 예상 로또 번호 :");
-		for(int i=0; i<6; i++)
+		for(int i=0; i<5; i++)
 			System.out.print(lotto[i] + " ");	
 
 	}
