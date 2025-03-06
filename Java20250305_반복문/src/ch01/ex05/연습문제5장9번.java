@@ -40,7 +40,7 @@ public class 연습문제5장9번 {
 				for(int i=0; i<scores.length; i++) {
 					sum += scores[i]; //합계 누적
 					
-					if(max>scores[i])  //최고점수
+					if(max < scores[i])  //최고점수
 						max = scores[i];
 				}
 				System.out.println("최고 점수: " + max);
