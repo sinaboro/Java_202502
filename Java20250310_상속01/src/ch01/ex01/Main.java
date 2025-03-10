@@ -59,6 +59,10 @@ public class Main {
 
 	public static void main(String[] args) {
 		
+		C cc = new C();
+		cc.displayInfo();
+		System.out.println();
+		
 		C c = new C("홍길동", 20, "test","1234");
 		c.displayInfo();
 		
