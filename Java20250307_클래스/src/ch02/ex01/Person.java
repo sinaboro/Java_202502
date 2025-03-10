@@ -12,9 +12,8 @@ public class Person {
 	private int age;
 	private String phone;
 	
-	//생성자
-	public Person(){
-		System.out.println("Person()");
+	public Person() {
+		
 	}
 
 	//생성자
@@ -30,6 +29,7 @@ public class Person {
 		age  = a;
 		phone = p;
 	}
+	
 	
 	void setName(String n) {
 		name = n;
