@@ -12,7 +12,7 @@ public class SwitchExam02 {
 		 * 59이하 : F
 		 */
 		
-		int grade = 95;
+		int grade = 100;
 		
 		switch(grade/10) {
 		case 10:			

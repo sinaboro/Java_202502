@@ -11,11 +11,10 @@ public class IfExam03 {
 		if(korScore >= 80) {
 			System.out.println("상");
 		}else {
-			if(korScore >= 60) {
+			if(korScore >= 60)
 				System.out.println("중");
-			}else {
-				System.out.println("하");				
-			}
+			else
+				System.out.println("하");
 		}		
 		
 		System.out.println("종료");

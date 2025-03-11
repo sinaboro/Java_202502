@@ -27,6 +27,7 @@ public class IfExam05 {
 		}
 		
 		System.out.println("종료");
+		
 	}
 
 }

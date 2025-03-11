@@ -13,8 +13,9 @@ public class IfExam02 {
 		 * swich 문
 		 */
 		
-		int kor = 80;
-		int eng  = 80;
+		int kor = 60;
+		
+		int eng  = 60;
 		
 		if(kor >= 70) {
 			System.out.println("합격");
@@ -27,6 +28,7 @@ public class IfExam02 {
 		if(eng >= 70 ) {
 			System.out.println("합격");
 		}
+	
 		System.out.println("종료");
 	}
 

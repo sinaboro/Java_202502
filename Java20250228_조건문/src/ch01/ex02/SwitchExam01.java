@@ -12,10 +12,10 @@ public class SwitchExam01 {
 		 * 59이하 : F
 		 */
 		
-		int grade = 85;
+		int grade = 90;
 		
 		switch(grade/10) {
-		case 10:
+		case 10:   //정수, 문자, 문자열
 			System.out.println("A");
 			break;
 		case 9:

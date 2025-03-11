@@ -21,6 +21,7 @@ public class ForExam03 {
 			if(i%2 == 1) //홀수 이니?
 				sum +=i;
 		}
+		
 		System.out.println(sum);
 		
 		sum = 0;
