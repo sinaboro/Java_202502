@@ -7,7 +7,7 @@ public class ForExam04_배열02 {
 	public static void main(String[] args) {		
 		//5명 점수를 입력 받아서 , 총점 평균을 구하기
 		Scanner sc  = new Scanner(System.in);
-		
+				
 		int[] num = new int[5];  //배열선언, int배열5개 있다
 		
 		System.out.println("1번학생 자바점수>>");

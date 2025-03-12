@@ -9,7 +9,8 @@ public class ForExam04_배열05 {
 		//7명학생 점수 입력받아서, 총점 ,평균구하기
 		Scanner sc = new Scanner(System.in);
 		//예시>> int num = 0;
-		int[] student = new int[]{10, -3, -700, 1, 2, 9, 3};
+		
+		int[] student = new int[] {50, 20,40,10,70,30,60}; 
 				
 		int sum = 0;
 		double average = 0;
@@ -27,7 +28,7 @@ public class ForExam04_배열05 {
 		
 		int max = student[0];   //변수 초기값 변경 가능
 		int min = student[0];
-		for(int i=0; i<7; i++) {
+		for(int i=0; i<7; i++) { //0~6
 			if(max < student[i])
 				max = student[i];
 			

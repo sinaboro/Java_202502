@@ -8,6 +8,7 @@ public class ForExam04_배열04 {
 		
 		//7명학생 점수 입력받아서, 총점 ,평균구하기
 		Scanner sc = new Scanner(System.in);
+	
 		int[] student = new int[7];
 		int sum = 0;
 		double average = 0;
