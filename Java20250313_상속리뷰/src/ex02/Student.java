@@ -17,6 +17,11 @@ public class Student extends Person{
 	void study() {}
 	
 	@Override
+	public String toString() {
+		return "Student [schoolName=" + schoolName + ", grade=" + grade + "]";
+	}
+
+	@Override
 	void introduce() {
 		System.out.println("안녕하세요. 저는 " + schoolName + "에 다니는" + grade + "학년 " 
 				+ getName() + "입니다.");

@@ -1,6 +1,6 @@
 package ex02;
 
-public class Person {
+public class Person{
 	private String name;
 	private int age;
 	
@@ -20,7 +20,12 @@ public class Person {
 	
 	void sleep() {}
 	void eat() {}
-	
+		
+	@Override
+	public String toString() {
+		return "Person [name=" + name + ", age=" + age + "]";
+	}
+
 	void introduce() {
 		System.out.println("안녕하세요. 저는 " + name + "이고, 나이는 " + age + "살입니다.");
 	}
