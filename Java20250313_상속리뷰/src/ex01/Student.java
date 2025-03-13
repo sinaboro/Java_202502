@@ -10,6 +10,6 @@ public class Student extends Person{
 	
 	void introduce() {
 		System.out.println("안녕하세요. 저는 " + schoolName + "에 다니는" + grade + "학년 " 
-				+ name + "입니다.");
+				+ getName() + "입니다.");
 	}
 }

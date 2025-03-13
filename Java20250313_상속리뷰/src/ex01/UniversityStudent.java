@@ -9,6 +9,7 @@ public class UniversityStudent extends Student{
 	void registerCourse() {	}  //수강 신청
 	
 	void introduce() {
-		System.out.println("안녕하세요. 저는 " + major + "전공하고 있는 " + name + "입니다.");
+		System.out.println("안녕하세요. 저는 " + major + 
+				"전공하고 있는 " + getName() + "입니다.");
 	}
 }

@@ -1,7 +1,7 @@
 package ex01;
 
 public class Person {
-	String name;
+	private String name;
 	private int age;
 	private String gender;
 	
