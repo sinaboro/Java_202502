@@ -20,7 +20,7 @@ public class 함수매개변수없고고반환값없는경우 {
 	}
 	
 	//함수 정의
-	public static void sum() {
+	static void sum() {
 		//코드 구현
 		System.out.println("void sum() 함수 호출!!");		
 	}

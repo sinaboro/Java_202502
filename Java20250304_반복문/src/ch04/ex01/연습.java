@@ -37,7 +37,28 @@ public class 연습 {
 				min = num[i];
 		}
 		System.out.println("최대: " + max + ", 최소: " + min);
+	
 		
+		//정렬 0  1    2  3      4 5 6 7 8 9 
+		for(int i=0; i<num.length-1; i++) {
+			for(int j=0; j<num.length-1-i; j++) {
+				
+				if(num[j]> num[j+1]) {
+					int tmp = num[j];
+					num[j] = num[j+1];
+					num[j+1] = tmp;
+				}				
+			}
+			// 10 -1 - 0 = 9
+			//10 -1-1 = 8
+			//10 -1-2 =7 
+			//10-1-3=6
+		}
+		
+		//배열값 출력
+		for(int i=0; i<num.length; i++)
+			System.out.print(num[i] + " ");
+		System.out.println();
 	}
 
 }
