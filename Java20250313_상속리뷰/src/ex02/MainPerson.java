@@ -14,6 +14,8 @@ public class MainPerson {
 		Student s1 = new Student("치악산", 15, "천호초등학교", 3);
 		
 		s1.introduce();
+		
+		UniversityStudent u2 = new UniversityStudent();
 	}
 
 }
