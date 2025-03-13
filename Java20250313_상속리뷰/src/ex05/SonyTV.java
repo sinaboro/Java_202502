@@ -2,20 +2,24 @@ package ex05;
 
 public class SonyTV extends TV{
 	
-	void power1() {
-		System.out.println("SonyTV");
+	@Override 
+	void powerOn() {
+		System.out.println("SonyTV.");
+		System.out.println("전원 on");
 	}
-	
 		
-	void power2() {
-		System.out.println("SonyTV");
+	void powerOff() {
+		System.out.println("SonyTV.");
+		System.out.println("전원 off");
 	}
 		   
-	void volume1() {
-		System.out.println("SonyTV");
+	void volumeUp() {
+		System.out.println("SonyTV.");
+		System.out.println("볼륨 up");
 	}
 		
-	void volume2() {
-		System.out.println("SonyTV");
-	}
+	void volumeDown() {
+		System.out.println("SonyTV.");
+		System.out.println("볼륨 down");
+	}  
 }

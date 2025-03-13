@@ -1,6 +1,11 @@
 package ex05;
 
-public class TV {
+
+/*
+ * 클래스 내부에 추상클래스가 1개 이상
+ * 존재하면 그 클래스는 추상 클래스이다.
+ */
+public abstract class TV {
 	
 	boolean power;
 	
@@ -8,20 +13,17 @@ public class TV {
 		power = false;
 	} 	
 	
-	void powerOn() {
-		System.out.println("TV");
-	}
+	//추상메소드 --> {}가 없다.
+	abstract void powerOn();
 		
-	void powerOff() {
-		System.out.println("TV");
-	}
+	abstract void powerOff();
 		   
-	void volumeUp() {
-		System.out.println("TV");
-	}
+	abstract void volumeUp();
 		
-	void volumeDown() {
-		System.out.println("TV");
+	abstract void volumeDown();
+	
+	void test() {
+		
 	}
 	
 	
