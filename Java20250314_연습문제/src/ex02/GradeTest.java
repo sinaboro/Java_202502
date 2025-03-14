@@ -19,6 +19,7 @@ public class GradeTest {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
+		
 		System.out.println("데이타 갯수>>");
 		int count = sc.nextInt();
 		

@@ -4,10 +4,6 @@ public class GradeExpr {
 	private int[] jumsu;
 //	private int sum=0;
 
-	public GradeExpr() {
-		
-	}
-
 	public GradeExpr(int[] jumsu) {
 		this.jumsu = jumsu;
 	}
