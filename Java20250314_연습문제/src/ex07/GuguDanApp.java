@@ -1,4 +1,4 @@
-package ex06;
+package ex07;
 
 /*
 1. dan 과 number 이 모두 1~9 사이이면 dan*number 의 구구단을 출력한다.
@@ -27,11 +27,11 @@ public class GuguDanApp {
 		System.out.println(dan);
 		System.out.println(number);
 		
-		if( (dan>=1 && dan <=9) && (number>=1 && number<=9)) {
+		if( dan <=9 && number<=9) {
 			GuGuDanExpr expr = new GuGuDanExpr(dan, number);
 			expr.printPart();
 			
-		}else if((dan>=1 && dan <=9) && number>=10) {
+		}else if(dan <=9 && number>=10) {
 			GuGuDanExpr expr = new GuGuDanExpr(dan);
 			expr.printPart();
 		}else if(dan>=10) {

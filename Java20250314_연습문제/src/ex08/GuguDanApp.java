@@ -1,4 +1,4 @@
-package ex06;
+package ex08;
 
 /*
 1. dan 과 number 이 모두 1~9 사이이면 dan*number 의 구구단을 출력한다.
@@ -20,23 +20,28 @@ public class GuguDanApp {
 
 	public static void main(String[] args) {
 		
+		String str = "가는 말이 고와야 오는 말이 곱다.";
+//		System.out.println(str.length());
+		System.out.printf("문자열 : %s", str);
+		
 		//1~20 난수 발생
 		int dan =  (int)(Math.random()*20) +1;
 		int number = (int)(Math.random()*20) +1;
 		
 		System.out.println(dan);
 		System.out.println(number);
+		GuGuDanExpr expr;
 		
-		if( (dan>=1 && dan <=9) && (number>=1 && number<=9)) {
-			GuGuDanExpr expr = new GuGuDanExpr(dan, number);
-			expr.printPart();
+		if(dan <= 9) {
+			if(number<=9) 
+				expr = new GuGuDanExpr(dan, number);
+			else 
+				expr = new GuGuDanExpr(dan);
 			
-		}else if((dan>=1 && dan <=9) && number>=10) {
-			GuGuDanExpr expr = new GuGuDanExpr(dan);
 			expr.printPart();
-		}else if(dan>=10) {
+		}else {
 			GuGuDanExpr.printAll();
-		}
+		}	
 			
 	}
 
