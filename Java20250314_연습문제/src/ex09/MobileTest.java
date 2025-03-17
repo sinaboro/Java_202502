@@ -22,6 +22,7 @@ public class MobileTest {
 	}
 	
 	//Mobile mobile = ltab;
+	//Mobile mobile = otab;
 	public static void printMobile(Mobile mobile) {
 		System.out.println(mobile.getMobileName() + "\t\t" 
 	+ mobile.getBatterySize() + "\t\t" + mobile.getOsType());
