@@ -9,6 +9,7 @@ public class MobileTest {
 		Mobile ltab = new Ltab("Ltab", 500, "ABC-01");
 		Mobile otab = new Otab("Otab", 1000, "XYZ-20");
 				
+		
 		// 생성된 객체의 정보를 출력한다.(printMobile() 호출)
 		printTitle();
 		printMobile(ltab);
