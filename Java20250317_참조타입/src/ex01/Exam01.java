@@ -51,6 +51,13 @@ public class Exam01 {
 		str1[1] = "java";
 		str1[2] = new String("java");
 		
+		//for(int i=0; i<str1.length; i++)
+		//	System.out.print(str1[i] +" ");
+		str1[0] = "spring";
+		
+		for(String x : str1)  // 향상된 for문
+			System.out.print(x +" ");
+		
 	}
 
 }

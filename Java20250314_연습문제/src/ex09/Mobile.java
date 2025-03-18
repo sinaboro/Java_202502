@@ -15,6 +15,9 @@ public abstract class Mobile {
 		this.osType = osType;
 	}
 	
+	default void func() {
+		
+	}
 	/*
 	 * 추상메소드 => Mobile을 상속하는 객체는 반드시 추상메소드를 재정의해서 사용해라!!
 	 * 추상클래스 => 객체 생성할 수 없다.
