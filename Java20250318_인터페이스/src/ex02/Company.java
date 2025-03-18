@@ -21,15 +21,26 @@ public class Company {
 		};
 		
 		// printEmployee() 메서드를 호출하여 Employee 배열의 객체들 정보를 출력한다.
-		System.out.println("name\t\tdepartment\t\tsalary\t\textra pay");
+		// 이 때는 세금을 출력하지 않는다.
+		System.out.println("name\tdepartment\tsalary\textra pay");
 		System.out.println("-----------------------------------------------------------------");
 		Company.printEmployee(employees, false);
 		
-		// 이 때는 세금을 출력하지 않는다.
 		// 모든 직원에게 인센티브로 100씩 지급한다.(직원에 따라 적용되는 인센티브 금액은 다르다.
+		for(Employee emp: employees) {
+			if(emp instanceof Bonus) {  //emp가 참조대상이 Bonus를 구현한 객체니?
+				//Bonus bonus = (Bonus)emp;
+				//bonus.incentive(100);
+				((Bonus) emp).incentive(100);
+			}
+		}
+		
+		System.out.println();
+		System.out.println();
 		// printEmployee() 메서드를 호출하여 Employee 배열의 객체들 정보 와 세금을 출력한다
-		
-		
+		System.out.println("name\t department\t salary\t tax\t extra pay");
+		System.out.println("-----------------------------------------------------------------");
+		Company.printEmployee(employees, true);		
 	}
 	
 	public static void printEmployee(Employee[] emp, boolean isTax) {
@@ -45,13 +56,19 @@ public class Company {
 		}
 		*/
 		for(Employee e : emp) {
-			System.out.printf("%-17s%-10s%18d",
+			System.out.printf("%-7s%12s%10d",
 					e.getName(),e.getDepartment(),e.getSalary() );
 			
-			if( e instanceof Sales) {
-				Sales s = (Sales)e;
-				System.out.printf("%18.1f", s.getExtraPay());
+			if(isTax) {
+				System.out.printf("%10.1f", e.tax());
 			}
+			if( e instanceof Sales) {
+//				Sales s = (Sales)e;
+//				System.out.printf("%18.1f", s.getExtraPay());
+				System.out.printf("%10.1f", ((Sales)e).getExtraPay());
+			}
+			
+		
 			System.out.println();
 		}
 	}
