@@ -59,15 +59,15 @@ public class Company {
 			System.out.printf("%-7s%12s%10d",
 					e.getName(),e.getDepartment(),e.getSalary() );
 			
-			if(isTax) {
+			if(isTax) { //isTax가 true면 실행
 				System.out.printf("%10.1f", e.tax());
 			}
+			
 			if( e instanceof Sales) {
 //				Sales s = (Sales)e;
 //				System.out.printf("%18.1f", s.getExtraPay());
 				System.out.printf("%10.1f", ((Sales)e).getExtraPay());
 			}
-			
 		
 			System.out.println();
 		}
