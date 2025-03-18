@@ -5,7 +5,7 @@ public abstract class Employee {
 	private String name;
 	private int number;
 	private String department;
-	private int salary;
+	private int salary;  //100
 	
 	public Employee() {
 	}
@@ -18,4 +18,15 @@ public abstract class Employee {
 	}
 	
 	public abstract double tax();
+	
+	int getSalary() {
+		return salary;
+	}
+
+	void setSalary(int salary) {
+		this.salary = salary;
+	}
+	
+	
+	
 }
