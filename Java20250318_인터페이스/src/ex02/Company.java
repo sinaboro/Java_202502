@@ -21,6 +21,8 @@ public class Company {
 		};
 		
 		// printEmployee() 메서드를 호출하여 Employee 배열의 객체들 정보를 출력한다.
+		System.out.println("name\t\tdepartment\t\tsalary\t\textra pay");
+		System.out.println("-----------------------------------------------------------------");
 		Company.printEmployee(employees, false);
 		
 		// 이 때는 세금을 출력하지 않는다.
@@ -33,8 +35,7 @@ public class Company {
 	public static void printEmployee(Employee[] emp, boolean isTax) {
 		// 객체의 정보를 출력한다.(실행 결과를 참조)
 		 // isTax 의 참/거짓 여부에 따라서 텍스 출력 여부를 결정하여 처리한다
-		System.out.println("name\t\tdepartment\t\tsalary\t\textra pay");
-		System.out.println("-----------------------------------------------------------------");
+		
 		/*
 		for(int i=0; i<emp.length; i++) {
 			System.out.println(
@@ -44,8 +45,14 @@ public class Company {
 		}
 		*/
 		for(Employee e : emp) {
-			System.out.printf("%-17s%-10s%18d\n", 
+			System.out.printf("%-17s%-10s%18d",
 					e.getName(),e.getDepartment(),e.getSalary() );
+			
+			if( e instanceof Sales) {
+				Sales s = (Sales)e;
+				System.out.printf("%18.1f", s.getExtraPay());
+			}
+			System.out.println();
 		}
 	}
 
