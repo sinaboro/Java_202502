@@ -26,6 +26,18 @@ public abstract class Employee {
 	void setSalary(int salary) {
 		this.salary = salary;
 	}
+
+	public String getName() {
+		return name;
+	}
+
+	public int getNumber() {
+		return number;
+	}
+
+	public String getDepartment() {
+		return department;
+	}
 	
 	
 	
