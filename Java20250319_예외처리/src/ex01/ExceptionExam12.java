@@ -13,6 +13,7 @@ public class ExceptionExam12 {
 //		FileInputStream fis = new FileInputStream("./src/ex01/test.txt");
 		try {
 			FileInputStream fis = new FileInputStream("src/ex01/test2.txt");
+			
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
