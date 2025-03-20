@@ -2,7 +2,7 @@ package ex07;
 
 /*
  * T : 타입인자
- * T extends A -> T에게 전달되는 대상은 A인거나 A 자손만 전달 가능
+ * T extends A -> T에게 전달되는 대상은 A인거나 A 하위클래스만 전달 가능
  */
 class Box<T extends A> {
 	private T obj;
