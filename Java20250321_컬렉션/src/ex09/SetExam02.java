@@ -1,5 +1,6 @@
 package ex09;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Objects;
@@ -65,6 +66,14 @@ public class SetExam02 {
 		
 		for(Num n : set)
 			System.out.println(n);
+		
+		int[] arr = {1,2,3,4,5};
+		int[] arr2 = arr;
+		
+		arr2[0] = 100;
+				
+		System.out.println(Arrays.toString(arr));
+		
 		
 	
 	}
