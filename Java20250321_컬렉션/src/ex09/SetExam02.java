@@ -1,4 +1,4 @@
-package ex07;
+package ex09;
 
 import java.util.HashSet;
 import java.util.Iterator;
@@ -8,7 +8,13 @@ import java.util.TreeSet;
 
 import lombok.AllArgsConstructor;
 
-class Num{
+class Person{
+	String name;
+	int age;
+	
+}
+
+class Num implements Comparable<Num>{
 
 	private int num;
 	
@@ -34,6 +40,11 @@ class Num{
 		Num number = (Num)obj;
 		
 		return this.num == number.num;
+	}
+
+	@Override
+	public int compareTo(Num o) {
+		return Integer.compare(this.num, o.num);
 	}	
 }
 
@@ -41,39 +52,21 @@ public class SetExam02 {
 
 	public static void main(String[] args) {
 		
-		Set<String> set = new TreeSet<>();
+		Set<Num> set = new TreeSet<>();
 		
-		set.add("Toy");
-		set.add("toy");
-		set.add("Box");
-		set.add("box");
-		set.add("Robot");
-		set.add("Toy");
-		
+	
 		//정렬 조건이 없기 때문에 실행 불가
 		
-//		set.add(new Num(1234));
-//		set.add(new Num(1357));
-//		set.add(new Num(1395));
-//		set.add(new Num(1234));
-//		set.add(new Num(1357));
+		set.add(new Num(1234));
+		set.add(new Num(1357));
+		set.add(new Num(1395));
+		set.add(new Num(1234));
+		set.add(new Num(1357));
 		
-		for(String n : set)
+		for(Num n : set)
 			System.out.println(n);
 		
-		System.out.println();
-		Set<Integer> iset = new TreeSet<>();
-		
-		iset.add(40);
-		iset.add(30);
-		iset.add(50);
-		iset.add(10);
-		iset.add(20);
-		iset.add(40);
-		iset.add(30);
-		
-		for(int n : iset)
-			System.out.println(n);
+	
 	}
 
 }
