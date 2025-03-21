@@ -20,21 +20,29 @@ class Box<T> {
 class A{}
 class B extends A{}
 class C extends B{}
-class D {}
+class D extends C{}
 
 class Unboxer{
 	public static <T> T openBox(Box<T> box) {
 		return box.getObj();
 	}
-	//                              상한 제한    
-	public static void peekBox(Box<? extends B > box) {
+	
+	public static void peekBox(Box<?> box) {
+		System.out.println(box);
+	}
+	
+	//                              상한 제한  --> 목적 : 읽기전용, 쓰기 금지   
+	public static void peekBox1(Box<? extends B > box) {
 //		System.out.println(box);
-		box.setObj(box);
+		box.getObj();
+//		box.setObj(box);
 	}
  
-	//                                 하한 제한
-	public static void peekBox2(Box<? super C> box) {
-		box.getObj(box);
+	//                                 하한 제한 --> 목적 : 쓰기전용, 읽기 금지  
+	public static void peekBox2(Box<? super B> box) {
+//		System.out.println(box);
+		box.getObj();
+//		box.setObj(box);
 	}
 }
 
@@ -42,9 +50,9 @@ public class WildcardExam01 {
 
 	public static void main(String[] args) {
 		Box<B> box = new Box<>();
-		box.setObj(new B());
+//		box.setObj(new A());
 		
-		Unboxer.peekBox(box);
+		Unboxer.peekBox2(box);
 		
 		
 	}
