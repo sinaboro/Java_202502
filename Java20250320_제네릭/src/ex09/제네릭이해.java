@@ -25,27 +25,29 @@ class BoxFactory{
 		box.setObj(o);
 		return box;
 	}
-
-	/*
-	public static <Double> Box<Double> makeBox(Double o) {
-		Box<Double> box = new Box<>();
-		box.setObj(o);
-		return box;
-	}
-	*/
 	
-	
-	
-	
-	
-	/*
-	 public static <T> Box<String> makeBox(String o) {
+}
+/*
+ * public static <T> Box<String> makeBox(String o) {
 		Box<String> box = new Box<>();
 		box.setObj(o);
 		return box;
-	} 
-	 */
+	}
+	
+	class Box<String> {
+	private String obj;
+
+	public String getObj() {
+		return obj;
+	}
+
+	public void setObj(String obj) {
+		this.obj = obj;
+	}
 }
+
+ */
+
 
 public class 제네릭이해 {
 

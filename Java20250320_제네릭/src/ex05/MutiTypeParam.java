@@ -1,24 +1,5 @@
 package ex05;
 
-/*
-DBox<Student, String> pBox = new DBox<>();
-
-class DBox<Student, String> {
-	private Student left;
-	private String right;
-	
-	public void set(Student left, String right) {
-		this.left = left;
-		this.right = right;
-	}
-	
-	@Override
-	public String toString() {
-		return left + " & " + right;
-	}
-}
-*/
-
 class DBox<L, R> {
 	private L left;
 	private R right;
@@ -34,13 +15,29 @@ class DBox<L, R> {
 	}
 }
 
+/*
+ * class DBox<String, Integer> {
+	private String left;
+	private Integer right;
+	
+	public void set(String left, Integer right) {
+		this.left = left;
+		this.right = right;
+	}
+	
+	@Override
+	public String toString() {
+		return left + " & " + right;
+	}
+}
+ */
 class Person {}
 
 public class MutiTypeParam {
 
 	public static void main(String[] args) {
 		
-		DBox<String, Integer> iBox = new DBox<>();
+		DBox<String, Integer> iBox = new DBox<String, Integer>();
 		
 		iBox.set("홍길동", 20);
 		

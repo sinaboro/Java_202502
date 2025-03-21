@@ -29,10 +29,40 @@ class Box<T> {
 	}
 }
 
+
+/*
+ * class Box<Apple> {
+	private Apple obj;
+
+	public Apple getObj() {
+		return obj;
+	}
+
+	public void setObj(Apple obj) {
+		this.obj = obj;
+	}
+	}
+ * 
+ */
+
+/*
+ * class Box<Orange> {
+	private Orange obj;
+
+	public Orange getObj() {
+		return obj;
+	}
+
+	public void setObj(Orange obj) {
+		this.obj = obj;
+	}
+}
+ */
 public class 제네릭이해 {
 
 	public static void main(String[] args) {
 		Box<Apple> aBox  = new Box<Apple>();
+	
 		Box<Orange> oBox = new Box<Orange>();
 		
 		aBox.setObj(new Apple());

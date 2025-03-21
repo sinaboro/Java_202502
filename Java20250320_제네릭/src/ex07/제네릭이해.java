@@ -20,6 +20,7 @@ class A{}
 class B extends A{}
 class C extends B{}
 
+
 class D{}
 class Person{}
 class Car{}
@@ -32,7 +33,9 @@ public class 제네릭이해 {
 		Box<B> bBox = new Box<>();
 		Box<C> cBox = new Box<>();
 
-		//Box<D> dBox = new Box<>();
+		//Box<Integer> iBox = new Box<>();
+		
+//		Box<D> dBox = new Box<>();
 		//Box<Person> pBox = new Box<>();
 		//Box<Car> cBox = new Box<>();
 		

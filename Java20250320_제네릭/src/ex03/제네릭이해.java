@@ -38,13 +38,13 @@ public class 제네릭이해 {
 		Box oBox = new Box(); //오렌지
 		
 		aBox.setObj("new Apple()");
-		oBox.setObj("new Orange()");
+//		oBox.setObj("new Orange()");
 		
 		Apple ap = (Apple)aBox.getObj(); //error 발생
-		Orange op = (Orange)oBox.getObj(); //error 발생
+//		Orange op = (Orange)oBox.getObj(); //error 발생
 		
 		System.out.println(ap);
-		System.out.println(op);
+//		System.out.println(op);
 	}
 
 }
