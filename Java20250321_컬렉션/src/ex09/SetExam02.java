@@ -9,12 +9,7 @@ import java.util.TreeSet;
 
 import lombok.AllArgsConstructor;
 
-class Person{
-	String name;
-	int age;
-	
-}
-
+//                    정렬순서를 정해주겠다
 class Num implements Comparable<Num>{
 
 	private int num;
@@ -46,7 +41,7 @@ class Num implements Comparable<Num>{
 	@Override
 	public int compareTo(Num o) {
 		return Integer.compare(this.num, o.num);
-	}	
+	}
 }
 
 public class SetExam02 {
@@ -57,7 +52,6 @@ public class SetExam02 {
 		
 	
 		//정렬 조건이 없기 때문에 실행 불가
-		
 		set.add(new Num(1234));
 		set.add(new Num(1357));
 		set.add(new Num(1395));
@@ -73,8 +67,6 @@ public class SetExam02 {
 		arr2[0] = 100;
 				
 		System.out.println(Arrays.toString(arr));
-		
-		
 	
 	}
 
